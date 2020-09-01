@@ -1,0 +1,66 @@
+.navbar{
+    width:98%;
+    box-shadow: 10px 10px 100px rgb(21, 187,150) ;
+    height:60px;
+    margin: 0 auto;
+    position:relative;
+    top:10px;
+    background-color: rgb(21, 187, 146);
+    border: 1px solid;
+    border-color: rgb(21, 187, 146);
+    border-radius: 100px;
+  }
+  .pname{
+    position: absolute;
+    /* top= 0; */
+    left: 15px;
+    color:white;
+    font-size: 40px !important;
+    padding: 6px 15px !important;
+  }
+  .options{  
+    float: right;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 0px;
+  }
+  .options a {
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    float: left;
+    text-decoration:none;
+    font-size:17px;
+    opacity: 0.6;
+  }
+  .options a:hover{
+      opacity: 1;
+  }
+  .help{
+    background-color: rgb(21, 187, 146);
+    border: none;
+    color: white;
+    opacity: 0.6;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 17px;
+    font-family: inherit;
+  }
+  .help:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  .vernav{
+      padding: 3px 3px;
+      margin-top: 10%;
+      margin-left: 3%;
+      width: 20%;
+      background-color: rgb(21, 187, 146);
+      font-size: 1.5em;
+      border-radius: 100%;
+      text-align: center;
+  }
+  .vernav a{
+      text-decoration: none;
+      color: white;
+  }

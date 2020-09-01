@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link href="css/loginpage.css" rel="stylesheet" type="text/css"> 
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01'); 
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    </head>
+    <body>   
+        <div class="navbar">
+            <div class="pname">
+                Developers
+            </div>
+            <div class="options">
+                <a href="#home">Database</a>
+                <a href="#quiz">Design</a>
+                <!-- <a href="#result">setting</a> -->
+                <button class="help" onclick="document.getElementById('id02').style.display='block'">Help</button>
+            </div>
+        </div>
+        <br><br><br>
+      <!--  on to open the modal login form -->
+<button class="login" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="moda">
+  <!-- Modal Content -->
+  <form class="moda-content animate" action="login1.php?q=loginpage.php" method="POST">
+  <!-- <fieldset> -->
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      
+    <div class="imgcontainer">
+      <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="contain">
+    <!-- <div class="form-group"> -->
+    <!-- <label class="col-md-3 control-label" for="email"></label>   -->
+    <!-- <div class="col-md-6"> -->
+      <input id="email" type="email" placeholder="Enter email" class="form-control input-md" name="email" required>
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- <div class="form-group"> -->
+    <!-- <label class="col-md-3 control-label" for="password"></label> -->
+    <!-- <div class="col-md-6"> -->
+       <input id="password" type="password" placeholder="Enter password" class="form-control input-md" name="password" required>
+    <!-- </div> -->
+    <!-- </div> -->
+
+      <button class="btn btn-primary" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancel" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+          <!-- </fieldset> -->
+  </form>
+    </div>
+    <?php
+    include_once 'modal.php';
+    ?>
+    </body>
+</html>
